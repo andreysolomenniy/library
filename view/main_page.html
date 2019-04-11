@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Домашняя библиотека, тестовое задание</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  
+  <body>
+<div class="tabs">
+  <ul>
+    <li>
+     <input type="radio" name="tabs-0" <rs checked_tab1> id="tabs-0-0" />
+        <label for="tabs-0-0">Книги</label>
+     <div>
+        <div class="add_ref" align="right"><a href="./controller/book_form.php?action=1">Добавить книгу</a></div>
+         <table width="100%" cellspacing="0" cellpadding="4" border="0" rules="rows" frame="hsides">
+             <r1 books>
+                <tr>
+                    <td><span><rs name></span><a href="./controller/book_form.php?action=2&id=<rs id>">Редактировать</a> <br>
+                        <r2 book_authors>
+                            <span><rs name></span><a href="./controller/delete_book_author.php?id_book=<rs id_book>&id_author=<rs id>">Удалить</a>
+                        </r2>
+                    </td>
+                    <td width="140" align=right><a href="./controller/delete_book.php?id=<rs id>">Удалить книгу<a><br><a href="./controller/book_author_form.php?id=<rs id>">Добавить автора</a></td>
+                </tr>
+            </r1>
+         </table>
+    </div>
+   </li>
+   <li>
+     <input type="radio" name="tabs-0" <rs checked_tab2> id="tabs-0-1" />
+       <label for="tabs-0-1">Авторы</label>
+     <div>
+        <div class="add_ref" align="right"><a href="./controller/author_form.php?action=1">Добавить автора</a></div>
+         <table width="100%" cellspacing="0" cellpadding="4" border="0" rules="rows" frame="hsides">
+             <r1 authors>
+                <tr>
+                    <td><span><rs name></span><a href="./controller/author_form.php?action=2&id=<rs id>">Редактировать</a></td>
+                    <td width="140" align=right><a href="./controller/delete_author.php?id=<rs id>">Удалить автора</a></td>
+                </tr>
+            </r1>
+         </table>
+    </div>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Домашняя библиотека. <rs mode_name></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+<body>
+  <p><rs mode_name></p>
+  <form method="POST" action="/controller/process_book.php">
+    <p>Наименование книги:</p>
+    <p><input name="name" maxlength="35" size="40" value="<rs name>" placeholder="Название книги" required></p>
+    <p><select size="10" multiple name="authors[]">
+        <r1 authors>
+            <option <rs selected>><rs name></option>
+        </r1>
+    </select></p>
+    <input type=submit name="doSave" value="Сохранить">
+    <input type=reset name="doReset" value="Очистить">
+    <input type=hidden name="action" value="<rs action>">
+    <input type=hidden name="id_book" value="<rs id_book>">
+  </form>
+</body>
+
+</html>

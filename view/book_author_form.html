@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Домашняя библиотека. Добавление автора книге</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+<body>
+  <form method="POST" action="/controller/add_book_author.php">
+    <p>Выберите автора</p>
+    <p><select size="10" name="author">
+        <r1 authors>
+            <option><rs name></option>
+        </r1>
+    </select></p>
+    <input type=submit name="doSave" value="Сохранить">
+    <input type=reset name="doReset" value="Очистить">
+    <input type=hidden name="id_book" value="<rs id_book>">
+  </form>
+</body>
+
+</html>
